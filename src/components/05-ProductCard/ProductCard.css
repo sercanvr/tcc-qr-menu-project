@@ -1,0 +1,178 @@
+/* 🎨 KART TASARIM DEĞİŞKENLERİ */
+:root {
+  /* Kart Boyutları */
+  --card-border-radius: 16px;
+  --card-padding: 1.25rem;
+  --card-min-height: 380px;
+  --card-image-height: 220px;
+  --image-padding: 12px;
+  --image-border-radius: 12px;
+
+  /* Kart Renkleri - GLASS EFFECT */
+  --card-background: rgba(255, 255, 255, 0.65);
+  --card-border: 1px solid rgba(255, 255, 255, 0.25);
+  --card-border-hover: 1px solid rgba(255, 255, 255, 0.4);
+  --card-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --card-shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+  /* Yazı Renkleri */
+  --card-title-color: #333;
+  --card-description-color: #666;
+  --card-price-color: #8b4513;
+
+  /* Buton Renkleri */
+  --button-background: linear-gradient(135deg, #8b4513 0%, #d2691e 100%);
+  --button-shadow: 0 2px 8px rgba(139, 69, 19, 0.3);
+  --button-shadow-hover: 0 4px 12px rgba(139, 69, 19, 0.4);
+
+  /* Animasyon Süreleri */
+  --transition-speed: 0.2s;
+}
+
+.product-card {
+  /* 🌟 GLASS EFFECT */
+  background: rgba(255,255,255,0.65);
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(253, 111, 9, 0.5);
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed) ease;
+  cursor: pointer;
+  min-height: var(--card-min-height);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-shadow-hover);
+  border: var(--card-border-hover);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  height: var(--card-image-height);
+  padding: var(--image-padding);
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform var(--transition-speed) ease;
+  border-radius: var(--image-border-radius);
+  background-color: #f8f8f8;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: var(--card-padding);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--card-title-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.product-description {
+  font-size: 0.85rem;
+  color: var(--card-description-color);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--card-price-color);
+}
+
+.add-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--button-background);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-speed) ease;
+  box-shadow: var(--button-shadow);
+  flex-shrink: 0;
+}
+
+.add-button:hover {
+  transform: scale(1.1);
+  box-shadow: var(--button-shadow-hover);
+}
+
+.add-button:active {
+  transform: scale(0.95);
+}
+
+.add-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* 📱 MOBİL RESPONSIVE */
+@media (max-width: 768px) {
+  :root {
+    --card-min-height: 320px;
+    --card-image-height: 180px;
+    --card-padding: 1rem;
+    --image-padding: 10px;
+    --image-border-radius: 10px;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-description {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+  }
+
+  .add-button {
+    width: 32px;
+    height: 32px;
+  }
+
+  .add-icon {
+    font-size: 1.1rem;
+  }
+}

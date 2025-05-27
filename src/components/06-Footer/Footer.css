@@ -1,0 +1,52 @@
+.footer {
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* FOOTER WALLPAPER */
+.footer-wallpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/assets/footer-background.jpg") center / cover;
+  background-attachment: local;
+  z-index: 1;
+}
+
+.footer-wallpaper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.footer-text {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    min-height: 150px;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
