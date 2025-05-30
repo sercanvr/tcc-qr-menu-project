@@ -12,22 +12,6 @@ function App() {
   const [activeCategory, setActiveCategory] = useState("all")
   const [showScrollButton, setShowScrollButton] = useState(false)
 
-  // ÜRÜN SAYILARI
-  const productCounts = {
-    all: 64,
-    "turk-kahvesi": 3,
-    espresso: 15,
-    "sicak-icecek": 6,
-    "bitki-cay": 4,
-    matcha: 2,
-    "soguk-cay": 3,
-    smoothie: 3,
-    soft: 18,
-    sandvic: 5,
-    kahvalti: 1,
-    salata: 3,
-    bowl: 1,
-  }
 
   const handleCategoryChange = (categoryId) => {
     setActiveCategory(categoryId)
@@ -83,9 +67,8 @@ function App() {
       <MenuNavigation
         onCategoryChange={handleCategoryChange}
         activeCategory={activeCategory}
-        productCounts={productCounts}
       />
-      <ProductGrid activeCategory={activeCategory} productCounts={productCounts} />
+      <ProductGrid activeCategory={activeCategory} />
       <SocialMediaBox />
       <Footer />
 
