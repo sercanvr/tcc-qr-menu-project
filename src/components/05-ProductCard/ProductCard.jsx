@@ -3,9 +3,6 @@
 import "./ProductCard.css"
 
 const ProductCard = ({ product }) => {
-  const handleAddToCart = () => {
-    console.log("Ürün sepete eklendi:", product.name)
-  }
 
   const handleImageError = (e) => {
     e.target.style.display = "none"
@@ -34,9 +31,6 @@ const ProductCard = ({ product }) => {
         )}
         <div className="product-footer">
           <span className="product-price">₺{product.price}</span>
-          <button className="add-button" onClick={handleAddToCart} aria-label={`${product.name} sepete ekle`}>
-            <span className="add-icon">+</span>
-          </button>
         </div>
       </div>
     </div>

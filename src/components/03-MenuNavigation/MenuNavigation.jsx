@@ -3,7 +3,7 @@
 import { useState } from "react"
 import "./MenuNavigation.css"
 
-const MenuNavigation = ({ onCategoryChange, activeCategory, productCounts }) => {
+const MenuNavigation = ({ onCategoryChange, activeCategory }) => {
   const [activeCategory_local, setActiveCategory_local] = useState("all")
 
   // 🎯 RADIO BUTTON STİLİ MENÜ
