@@ -5,4 +5,4 @@
 Built with React.js, it includes features like dynamic QR menus and an admin control panel.
 
 ### Design Overview 🎨
-[![tcc.png](https://i.postimg.cc/WzdfQZ8h/tcc.png)](https://postimg.cc/y3zPRkwH)
+[![Site.png](https://i.postimg.cc/B6xyr2Lt/Site.png)](https://postimg.cc/Q9d059qr)
