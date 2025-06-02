@@ -29,7 +29,6 @@ const ProductGrid = ({ activeCategory = "all" }) => {
   // Kategori ismi
   const getCategoryName = (categoryId) => {
 
-    console.log(categoryId);
     const categoryNames = {
       all: "Tüm Ürünler",
       "turk-kahvesi": "Türk Kahvesi",
