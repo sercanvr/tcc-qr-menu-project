@@ -37,6 +37,8 @@ const ProductGrid = () => {
       kahvalti: 'HIZLI KAHVALTI',
       salata: 'SALATALAR',
       bowl: 'BOWL',
+      detoks:"Detoks",
+      "ice-bar":"Ice Bar"
     };
     return categoryNames[categoryId] || 'Ürünler';
   };

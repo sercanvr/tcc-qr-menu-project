@@ -510,5 +510,85 @@
     "description": "(Süzme Yoğurt, Granola, Çilek, Muz, Bal)",
     "image": "/assets/products/granola-bowl.jpg",
     "category": "bowl"
-  }
+  },
+  {
+    "id": 65,
+    "name": "Ice Americano",
+    "price": "130",
+    "image": "/assets/products/ice-americano.jpg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 66,
+    "name": "Ice Latte",
+    "price": "135",
+    "image": "/assets/products/ice-latte.jpg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 67,
+    "name": "Ice Mocha",
+    "price": "140",
+    "image": "/assets/products/ice-mocha.jpg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 68,
+    "name": "Ice White Mocha",
+    "price": "140",
+    "image": "/assets/products/ice-white-mocha.jpeg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 69,
+    "name": "Ice Caramel Latte",
+    "price": "140",
+    "image": "/assets/products/ice-latte.jpg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 70,
+    "name": "Ice Vanilya Latte",
+    "price": "145",
+    "image": "/assets/products/ice-vanilla-latte.jpeg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 71,
+    "name": "Ice Fındık Latte",
+    "price": "135",
+    "image": "/assets/products/ice-findik-latte.jpeg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 72,
+    "name": "Ice Filtre Kahve",
+    "price": "90",
+    "image": "/assets/products/filtre-kahve.jpg",
+    "category": "ice-bar"
+  },
+  {
+    "id": 73,
+    "name": "Ice Çay Tea Latte",
+    "price": "130",
+    "image": "/assets/products/ice-cay-tea-latte.jpg",
+    "category": "ice-bar"
+  },
+   {
+     "id": 74,
+     "name": "Green Detoks",
+     "price": "185",
+     "description": "Yeşil Elma, Salatalık, Maydonoz, Roka, Lime",
+     "image": "/assets/products/green-detoks.jpg",
+     "category": "detoks"
+   },
+      {
+     "id": 75,
+     "name": "Sunrise Detoks",
+     "price": "185",
+     "description": "Portakal, havuç, zencefil",
+     "image": "/assets/products/sunrise-detoks.jpg",
+     "category": "detoks"
+   }
+
 ]

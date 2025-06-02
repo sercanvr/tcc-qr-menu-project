@@ -20,7 +20,9 @@ const MenuNavigation = ({ onCategoryChange, activeCategory }) => {
     { id: "kahvalti", name: "Hızlı Kahvaltı" },
     { id: "salata", name: "Salatalar" },
     { id: "bowl", name: "Bowl" },
-  ]
+    { id: "detoks", name: "Detoks" },
+    { id: "ice-bar", name: "Ice Bar" },
+  ];
 
 
   const scrollToCategory = (categoryId) => {
