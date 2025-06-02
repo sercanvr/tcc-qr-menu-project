@@ -1,0 +1,102 @@
+.header {
+  background: linear-gradient(135deg, #8b4513 0%, #d2691e 100%);
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-glass-frame {
+  background: rgba(255,255,255,0.25);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 12px;
+  padding: 5px 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+
+.logo-glass-frame:hover {
+  background: rgba(255,255,255,0.35);
+  box-shadow: 20px 20px 50px -6px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
+
+.logo {
+  max-height: 80px;
+  width: auto;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.521));
+  transition: all 0.3s ease;
+}
+
+
+.logo:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* YENİ WAVE STİLİ - HEADER İÇİNDE */
+.custom-shape-divider-bottom-1748321996 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1748321996 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+.custom-shape-divider-bottom-1748321996 .shape-fill {
+  fill: #bf9d78;
+}
+
+/* MOBİL RESPONSIVE GÜNCELLEMELER */
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 0;
+    padding-bottom: 80px;
+  }
+
+
+  .logo-glass-frame {
+    padding: 8px 8px;
+  }
+
+  .logo {
+    max-height: 60px;
+  }
+
+  .custom-shape-divider-bottom-1748321996 svg {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-bottom: 60px;
+  }
+
+
+  .logo-glass-frame {
+    padding: 5px 10px;
+  }
+
+  .custom-shape-divider-bottom-1748321996 svg {
+    height: 40px;
+  }
+}
